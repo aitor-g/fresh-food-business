@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid black; */
+}
+
+img {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding-top: 60px;
+} 
+
+/* main{
+  padding-top: 60px;
+} */
+
+.carousel-item img {
+  height: 45vh;
+}
+
+#cita {
+  background-color: rgb(244, 244, 244);
+}
+
+.card {
+  max-width: 100%;
+}
+
+.card-body {
+  height: 15rem;
+  overflow: hidden;
+}
+
+#footer{
+  margin-top: 6rem;
+}
