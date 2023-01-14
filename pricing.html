@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proyecto Bootstrap</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+            <div class="container">
+                <!-- LOGO -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <h1 class="h4 me-1">LoremFresh</h1>
+                    <img src="https://cdn-icons-png.flaticon.com/512/424/424268.png" alt="Vegetable" width="30"
+                        height="24" />
+                </a>
+                <!-- FIN LOGO -->
+
+                <!-- TOGGLER BUTTON -->
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- FIN TOGGLER -->
+
+                <!-- NAV COLAPSABLE -->
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold active" href="pricing.html" aria-current="page">Pricing <span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Blog</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="blog-home.html">Blog Home</a>
+                                <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a>
+                                <a class="dropdown-item" href="portfolio-items.html">Portfolio Items</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- FIN NAV COLAPSABLE -->
+
+                    <!-- BARRA DE BUSQUEDA -->
+                    <form class="d-flex">
+                        <div class="input-group">
+                            <input type="text"
+                                class="form-control rounded rounded-start-pill border-secondary border-end-0"
+                                placeholder="Search..." aria-label="Recipient's username"
+                                aria-describedby="basic-addon2" />
+                            <span
+                                class="input-group-text btn btn-warning rounded rounded-end-pill bg-gradient border-secondary border-start-0"
+                                id="basic-addon2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </form>
+                    <!-- FIN DE LA BARRA -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- FIN DEL HEADER -->
+
+    <!-- MAIN -->
+    <main>
+        <!-- CARTAS DE PRECIO -->
+        <section id="pricing-cards">
+            <div class="container">
+
+                <!-- CABECERA -->
+                <div class="text-center my-5">
+                    <h2 class="h1 fw-semibold">Pay as you grow</h2>
+                    <p class="text-secondary">With our decreasing per volume prices</p>
+                </div>
+                <!-- FIN CABECERA -->
+
+                <!-- CARTAS -->
+                <div
+                    class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 justify-content-evenly justify-content-xl-center text-start g-5 my-5">
+
+                    <!-- CARTA 1 -->
+                    <div class="col">
+                        <div class="card p-5">
+                            <div class="card-body h-100">
+                                <div class="card-title">
+                                    <div class="h6 text-secondary fw-semibold">
+                                        Free
+                                    </div>
+                                    <div class="h1 display-4 fw-semibold">£0
+                                        <span class="fs-5 lead text-secondary">
+                                            / mo.
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="card-text">
+                                <ul class="lh-lg list-unstyled">
+                                    <li class="d-flex align-items-center fw-semibold">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check text-success me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        <span>
+                                            Lorem.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check text-success me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        <span>
+                                            Sint consequatur aut
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check text-success me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        <span>
+                                            Maiores esse rem.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check text-success me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        <span>
+                                            Culpa expedita.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center text-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-x me-1" viewBox="0 0 16 16">
+                                            <path
+                                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                        <span>
+                                            Esse rerum sequi
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center text-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-x me-1" viewBox="0 0 16 16">
+                                            <path
+                                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                        <span>
+                                            Possimus odio.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center text-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-x me-1" viewBox="0 0 16 16">
+                                            <path
+                                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                        <span>
+                                            Explicabo magni culpa.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center text-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-x me-1" viewBox="0 0 16 16">
+                                            <path
+                                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                        <span>
+                                            Minima ullam!
+                                        </span>
+                                    </li>
+                                </ul>
+                                </p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn btn-outline-success mt-3 w-100">Choose plan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIN CARTA 1 -->
+
+                    <!-- CARTA 2 -->
+                    <div class="col">
+                        <div class="card p-5">
+                            <div class="card-body h-100">
+                                <div class="card-title">
+                                    <div class="h6 text-secondary fw-semibold d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill text-warning me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <span>Pro</span>
+                                    </div>
+                                    <div class="h1 display-4 fw-semibold">£19
+                                        <span class="fs-5 lead text-secondary">
+                                            / mo.
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="card-text">
+                                <ul class="lh-lg list-unstyled">
+                                    <li class="d-flex align-items-center fw-semibold">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check text-success me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        <span>
+                                            Lorem ipsum.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check text-success me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        <span>
+                                            Sint consequatur aut
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check text-success me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        <span>
+                                            Maiores esse rem.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check text-success me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        <span>
+                                            Culpa expedita.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check text-success me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        <span>
+                                            Esse rerum sequi
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check text-success me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        <span>
+                                            Possimus odio.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check text-success me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        <span>
+                                            Explicabo magni culpa.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center text-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-x me-1" viewBox="0 0 16 16">
+                                            <path
+                                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                        <span>
+                                            Minima ullam!
+                                        </span>
+                                    </li>
+                                </ul>
+                                </p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn btn-success mt-3 w-100">Choose plan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIN CARTA 2 -->
+
+                    <!-- CARTA 3 -->
+                    <div class="col">
+                        <div class="card p-5">
+                            <div class="card-body h-100">
+                                <div class="card-title">
+                                    <div class="h6 text-secondary fw-semibold d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-rocket-takeoff-fill text-warning me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.17 9.53c2.307-2.592 3.278-4.684 3.641-6.218.21-.887.214-1.58.16-2.065a3.578 3.578 0 0 0-.108-.563 2.22 2.22 0 0 0-.078-.23V.453c-.073-.164-.168-.234-.352-.295a2.35 2.35 0 0 0-.16-.045 3.797 3.797 0 0 0-.57-.093c-.49-.044-1.19-.03-2.08.188-1.536.374-3.618 1.343-6.161 3.604l-2.4.238h-.006a2.552 2.552 0 0 0-1.524.734L.15 7.17a.512.512 0 0 0 .433.868l1.896-.271c.28-.04.592.013.955.132.232.076.437.16.655.248l.203.083c.196.816.66 1.58 1.275 2.195.613.614 1.376 1.08 2.191 1.277l.082.202c.089.218.173.424.249.657.118.363.172.676.132.956l-.271 1.9a.512.512 0 0 0 .867.433l2.382-2.386c.41-.41.668-.949.732-1.526l.24-2.408Zm.11-3.699c-.797.8-1.93.961-2.528.362-.598-.6-.436-1.733.361-2.532.798-.799 1.93-.96 2.528-.361.599.599.437 1.732-.36 2.531Z" />
+                                            <path
+                                                d="M5.205 10.787a7.632 7.632 0 0 0 1.804 1.352c-1.118 1.007-4.929 2.028-5.054 1.903-.126-.127.737-4.189 1.839-5.18.346.69.837 1.35 1.411 1.925Z" />
+                                        </svg>
+                                        <span>Enterprise</span>
+                                    </div>
+                                    <div class="h1 display-4 fw-semibold">£49
+                                        <span class="fs-5 lead text-secondary">
+                                            / mo.
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="card-text">
+                                <ul class="lh-lg list-unstyled">
+                                    <li class="d-flex align-items-center fw-semibold">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check text-success me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        <span>
+                                            Lorem ipsum dolor.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check text-success me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        <span>
+                                            Sint consequatur aut
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check text-success me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        <span>
+                                            Maiores esse rem.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check text-success me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        <span>
+                                            Culpa expedita.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check text-success me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        <span>
+                                            Esse rerum sequi
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check text-success me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        <span>
+                                            Possimus odio.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check text-success me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        <span>
+                                            Explicabo magni culpa.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check text-success me-1"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        <span>
+                                            Minima ullam!
+                                        </span>
+                                    </li>
+                                </ul>
+                                </p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn btn-warning text-secondary mt-3 w-100">Choose plan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIN CARTA 3 -->
+
+                </div>
+                <!-- FIN CARTAS -->
+
+            </div>
+        </section>
+        <!-- FIN CARTAS DE PRECIO -->
+
+    </main>
+    <!--FIN DEL MAIN -->
+
+    <!-- FOOTER -->
+    <footer id="footer" class="bg-secondary mt-5">
+        <div class="container py-4">
+            <div class="row text-white justify-content-between align-items-center">
+                <div class="col">Copyright &copy; Aitor Guedes 2023</div>
+                <div class="col">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <a class="link-light text-decoration-underline me-5" href="faq.html">Privacy</a>
+                        <a class="link-light text-decoration-underline me-5" href="about.html">Terms</a>
+                        <a class="link-light text-decoration-underline" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FIN DEL FOOTER -->
+
+    <!-- BOOTASTRAPT SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- FIN DEL BOOTASTRAPT SCRIPT -->
+
+</body>
+
+</html>

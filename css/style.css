@@ -8,14 +8,11 @@ img {
   box-sizing: border-box;
 }
 
-body {
+body{
   min-height: 100vh;
   padding-top: 60px;
 }
 
-/* main{
-  padding-top: 60px;
-} */
 
 .carousel-item img {
   height: 45vh;
