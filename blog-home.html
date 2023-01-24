@@ -44,9 +44,7 @@
           <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
               <li class="nav-item">
-                <a class="nav-link fw-semibold active" href="index.html" aria-current="page"
-                  >Home <span class="visually-hidden">(current)</span></a
-                >
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
@@ -62,16 +60,17 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle fw-semibold active"
                   href="#"
                   id="dropdownId"
                   data-bs-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
-                  >Blog</a
+                  aria-current="page"
+                  >Blog <span class="visually-hidden">(current)</span></a
                 >
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
-                  <a class="dropdown-item" href="blog-home.html">Blog Home</a>
+                  <a class="dropdown-item text-bg-success disabled" href="blog-home.html">Blog Home</a>
                   <a class="dropdown-item" href="blog-post.html">Blog Post</a>
                 </div>
               </li>
@@ -137,16 +136,16 @@
           <h1 class="fw-bold fs-5 mb-4">Company Blog</h1>
           <div class="card border-0 shadow-lg rounded-3 overflow-hidden">
             <div class="card-body p-0">
-              <div class="row g-0">
-                <div class="col-lg-6 col-xl-5 py-lg-5">
-                  <div class="p-5">
-                    <div class="badge bg-success rounded-pill mb-2">News</div>
-                    <h3 class="card-title text-start fw-bold">Article heading goes here</h3>
-                    <p class="card-text">
+              <div class="row gx-0">
+                <aadiv class="col-lg-6 col-xl-5 py-lg-5">
+                  <div class="p-4 p-md-5">
+                    <div class="badge bg-success bg-gradient rounded-pill mb-2">News</div>
+                    <h3 class="card-title fw-bold">Article heading goes here</h3>
+                    <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus ab doloremque, qui
                       doloribus ea officiis...
                     </p>
-                    <a href="" class="stretched-link text-decoration-none ">
+                    <a href="" class="stretched-link text-decoration-none">
                       Read more
                       <span>
                         <svg
@@ -165,15 +164,9 @@
                       </span>
                     </a>
                   </div>
-                </div>
+                </aadiv>
                 <div class="col-lg-6 col-xl-7">
-                  <div>
-                    <img
-                      src="https://dummyimage.com/700x350/343a40/6c757d"
-                      class="img-fluid rounded"
-                      alt="Card title"
-                    />
-                  </div>
+                  <div class="bg-featured-blog"></div>
                 </div>
               </div>
             </div>
