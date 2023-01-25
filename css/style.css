@@ -17,12 +17,13 @@ body {
   padding-top: 60px;
 }
 
-#index-introduction .carousel-item img {
-  height: 45vh;
+i {
+  width: 1em;
+  height: 1em;
 }
 
-#index-quote {
-  background-color: rgb(244, 244, 244);
+#index-introduction .carousel-item img {
+  height: 45vh;
 }
 
 #index-cards .card {
