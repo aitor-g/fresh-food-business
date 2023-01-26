@@ -47,3 +47,11 @@ i {
   background-repeat: no-repeat;
   min-height: 15rem;
 }
+
+#blog-home-featured-stories .card-body {
+  height: 12rem;
+}
+
+#blog-home-featured-stories .team-miniportrait {
+  width: 50px;
+}
