@@ -34,7 +34,7 @@ i {
   height: 15rem;
 }
 
-#about-team .team-portraits {
+.team-portraits {
   width: 150px;
 }
 
@@ -52,6 +52,10 @@ i {
   height: 12rem;
 }
 
-#blog-home-featured-stories .team-miniportrait {
+.team-miniportrait {
   width: 50px;
+}
+
+#blog-post-entrance .post-image{
+  height: 25em;
 }
