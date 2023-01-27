@@ -135,8 +135,9 @@
         <article>
           <div class="container py-5">
             <div class="row g-2 py-5">
-              <div class="col-3">
-                <div class="d-flex align-items-center py-5">
+              <div class="col-xl-3">
+                <!-- PROFILE BOX -->
+                <div class="d-flex align-items-center py-xl-5">
                   <img
                     src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
                     alt=""
@@ -147,8 +148,10 @@
                     <small class="text-secondary">News, Business</small>
                   </div>
                 </div>
+                <!-- PROFILE BOX -->
               </div>
-              <div class="col-9">
+              <div class="col-xl-9">
+                <!-- POST HEADER -->
                 <h2 class="h1 fw-bold mb-1">Welcome to Blog Post!</h2>
                 <small class="text-secondary fs-6 fst-italic">January 1, 2022</small>
                 <div class="mt-2 mb-4">
@@ -162,6 +165,9 @@
                     class="w-100 h-100 object-fit-cover rounded"
                   />
                 </div>
+                <!-- END POST HEADER -->
+
+                <!-- POST CONTENT -->
                 <div class="my-4 fs-5">
                   <p>
                     Doloremque consequuntur modi, obcaecati voluptas in blanditiis autem voluptate, cumque sunt, numquam
@@ -190,7 +196,11 @@
                     dolores qui dicta est.
                   </p>
                 </div>
+                <!-- POST CONTENT -->
+
+                <!-- POST COMMENTS -->
                 <div class="bg-light border rounded">
+                  <!-- TEXT INPUT BOX -->
                   <form action="" method="post" class="m-3">
                     <div class="mb-4">
                       <textarea
@@ -200,7 +210,28 @@
                       ></textarea>
                     </div>
                   </form>
+                  <!-- TEXT INPUT BOX -->
+
+                  <!-- COMMENTS CONTAINER -->
                   <div class="comments-container mx-3">
+                    <!-- EXAMPLE OF MAIN COMMENT -->
+                    <div class="main-topic-comment mb-1">
+                      <div class="d-flex align-items-start">
+                        <img
+                          src="https://images.unsplash.com/photo-1542909192-2f2241a99c9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80https://images.unsplash.com/photo-1542909192-2f2241a99c9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                          alt=""
+                          class="team-miniportrait rounded-circle"
+                        />
+                        <div class="ms-3">
+                          <h6 class="fw-bold mb-0">Yian Ming</h6>
+                          <p>
+                            Vel aliquid atque id adipisci repellat necessitatibus error optio eum nulla. Expedita
+                            perspiciatis rerum quam obcaecati quaerat ipsam!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- END EXAMPLE OF MAIN COMMENT -->
                     <div class="main-topic-comment mb-1">
                       <div class="d-flex align-items-start">
                         <img
@@ -232,6 +263,7 @@
                             </p>
                           </div>
                         </div>
+                        <!-- EXAMPLE OF A SUBCOMMENT (TWICE NESTED) -->
                         <div class="sub-topic-comment ms-5 ps-3">
                           <div class="d-flex align-items-start">
                             <img
@@ -249,6 +281,7 @@
                             </div>
                           </div>
                         </div>
+                        <!-- EXAMPLE OF A SUBCOMMENT -->
                       </div>
                     </div>
                     <div class="main-topic-comment mb-1">
@@ -296,7 +329,9 @@
                       </div>
                     </div>
                   </div>
+                  <!-- END COMMENTS CONTAINER -->
                 </div>
+                <!-- END POST COMMENTS -->
               </div>
             </div>
           </div>
