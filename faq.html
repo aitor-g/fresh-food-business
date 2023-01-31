@@ -71,9 +71,9 @@
                   aria-expanded="false"
                   >Blog</a
                 >
-                <div class="dropdown-menu" aria-labelledby="dropdownId1">
-                  <a class="dropdown-item" href="blog-home.html">Blog Home</a>
-                  <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+                <div class="dropdown-menu bg-success" aria-labelledby="dropdownId1">
+                  <a class="dropdown-item text-light" href="blog-home.html">Blog Home</a>
+                  <a class="dropdown-item text-light" href="blog-post.html">Blog Post</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -86,9 +86,9 @@
                   aria-expanded="false"
                   >Portfolio</a
                 >
-                <div class="dropdown-menu" aria-labelledby="dropdownId2">
-                  <a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a>
-                  <a class="dropdown-item" href="portfolio-items.html">Portfolio Items</a>
+                <div class="dropdown-menu bg-success" aria-labelledby="dropdownId2">
+                  <a class="dropdown-item text-light" href="portfolio-overview.html">Portfolio Overview</a>
+                  <a class="dropdown-item text-light" href="portfolio-items.html">Portfolio Items</a>
                 </div>
               </li>
             </ul>
@@ -133,7 +133,7 @@
     <!-- MAIN -->
     <main>
       <!-- FAQ -->
-      <section id="faq-faq">
+      <section id="faq-faq" class="pb-5 mb-">
         <div class="container">
           <!-- TITLE -->
           <div id="faq-title" class="my-5 pt-5 text-center">
@@ -143,10 +143,11 @@
           <!-- FIN TITLE -->
 
           <div class="row">
-            <!-- ACCOUNT AND BILLING -->
-            <h2 class="ps-5 pb-2">Account and Billing</h2>
-            <div class="col-8 px-5 mb-5">
-              <div class="accordion" id="accordionExample">
+            <!-- ACCORDIONS -->
+            <div class="col-12 col-xl-8 px-xl-5 mb-5">
+              <!-- ACCOUNT AND BILLING -->
+              <h2 class="pb-2 fw-bold">Account and Billing</h2>
+              <div class="accordion pb-5" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button
@@ -162,7 +163,7 @@
                   </h2>
                   <div
                     id="collapseOne"
-                    class="accordion-collapse collapse"
+                    class="accordion-collapse collapse show"
                     aria-labelledby="headingOne"
                     data-bs-parent="#accordionExample"
                   >
@@ -235,45 +236,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- FIN ACCOUNT AND BILLING -->
+              <!-- FIN ACCOUNT AND BILLING -->
 
-            <!-- ASIDE -->
-            <div class="col-4">
-              <div class="p-5 bg-light border rounded-3 text-center">
-                <h6 class="fw-bold">Have more questions?</h6>
-                <p class="mb-0">Contact us at</p>
-                <a class="link-success" href="mailto:">support@domain.com</a>
-                <div class="row justify-content-center">
-                  <h6 class="mt-3 fw-bold">Follow us</h6>
-                  <div class="col-2">
-                    <a href="http://">
-                      <i class="bi bi-facebook fs-3"></i>
-                    </a>
-                  </div>
-                  <div class="col-2">
-                    <a href="http://">
-                      <i class="bi bi-twitter fs-3"></i>
-                    </a>
-                  </div>
-                  <div class="col-2">
-                    <a class="link-danger" href="http://">
-                      <i class="bi bi-youtube fs-3"></i>
-                    </a>
-                  </div>
-                  <div class="col-2">
-                    <a href="http://">
-                      <i class="bi bi-linkedin fs-3"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- FIN ASIDE -->
-
-            <!-- WEB ISSUES -->
-            <h2 class="ps-5 pb-2">Website Issues</h2>
-            <div class="col-8 px-5 pb-5 mb-5">
+              <!-- WEB ISSUES -->
+              <h2 class="pb-2 fw-bold">Website Issues</h2>
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
@@ -363,8 +329,42 @@
                   </div>
                 </div>
               </div>
+              <!-- FIN WEB ISSUES -->
             </div>
-            <!-- FIN WEB ISSUES -->
+            <!-- END ACCORDIONS -->
+
+            <!-- ASIDE -->
+            <div class="col-12 col-xl-4 mt-1 pt-xl-5 pt-0 pb-5 pb-xl-0">
+              <div class="p-5 bg-light border rounded-3 text-center">
+                <h6 class="fw-bold">Have more questions?</h6>
+                <p class="mb-0">Contact us at</p>
+                <a class="link-success" href="mailto:">support@domain.com</a>
+                <div class="row justify-content-center">
+                  <h6 class="mt-3 fw-bold">Follow us</h6>
+                  <div class="col-2">
+                    <a href="http://">
+                      <i class="bi bi-facebook fs-3"></i>
+                    </a>
+                  </div>
+                  <div class="col-2">
+                    <a href="http://">
+                      <i class="bi bi-twitter fs-3"></i>
+                    </a>
+                  </div>
+                  <div class="col-2">
+                    <a class="link-danger" href="http://">
+                      <i class="bi bi-youtube fs-3"></i>
+                    </a>
+                  </div>
+                  <div class="col-2">
+                    <a href="http://">
+                      <i class="bi bi-linkedin fs-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN ASIDE -->
           </div>
         </div>
       </section>

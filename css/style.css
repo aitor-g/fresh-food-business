@@ -59,3 +59,13 @@ i {
 #blog-post-entrance .post-image {
   height: 25em;
 }
+
+.dropdown-item:hover {
+  background-color: #ffc107 !important;
+  color: #6c757d !important;
+}
+
+.dropdown-item:focus {
+  background-color: #ffd65c !important;
+  color: #6c757d !important;
+}
