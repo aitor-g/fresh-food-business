@@ -1,0 +1,77 @@
+$warning: #ffc107;
+$warning-focus: #ffd65c;
+$secondary: #6c757d;
+
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid black; */
+}
+
+img {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding-top: 55px;
+}
+
+i {
+  width: 1em;
+  height: 1em;
+}
+
+#index-introduction .carousel-item img {
+  height: 45vh;
+}
+
+#index-cards {
+  .card {
+    max-width: 100%;
+  }
+
+  .card-body {
+    height: 15rem;
+  }
+}
+
+.team-portraits {
+  width: 150px;
+}
+
+#blog-home-company-blog .bg-featured-blog {
+  background-image: url("https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 15rem;
+}
+
+#blog-home-featured-stories .card-body {
+  height: 12rem;
+}
+
+.team-miniportrait {
+  width: 50px;
+}
+
+#blog-post-entrance .post-image {
+  height: 25em;
+}
+
+.dropdown-item:hover {
+  background-color: $warning !important;
+  color: $secondary !important;
+}
+
+.dropdown-item:focus {
+  background-color: $warning-focus !important;
+  color: $secondary !important;
+}
